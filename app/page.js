@@ -70,10 +70,10 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-black text-white">
-  <h1 className="text-6xl font-extrabold mb-10 uppercase tracking-wide">
+  <h1 className="text-6xl font-extrabold mb-4 uppercase tracking-wide">
     Skibidify
   </h1>
-
+  <p className="text-lg mb-10">Search for a song and turn it into brainrot</p>
   <div className="relative w-full max-w-2xl">
     <input
       type="text"

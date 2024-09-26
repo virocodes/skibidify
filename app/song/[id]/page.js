@@ -562,23 +562,23 @@ export default function SongPage() {
         onClick={() => skibidify(lyrics)}>SKIBIDIFY!</button>
     </div>
         {/* Lyrics */}
-        <div className='flex flex-row gap-8 justify-center w-full'>
+        <div className='flex flex-col md:flex-row gap-8 justify-center w-full'>
             <div className="bg-gray-900 p-6 rounded-lg shadow-lg w-full">
-            <h2 className="text-2xl font-semibold mb-4">Lyrics:</h2>
-            {loading ? (
-                <p>Loading lyrics...</p>    
-            ) : (
-                <pre className="whitespace-pre-wrap">{lyrics}</pre>
-            )}
+                <h2 className="text-2xl font-semibold mb-4">Lyrics:</h2>
+                {loading ? (
+                    <p>Loading lyrics...</p>    
+                ) : (
+                    <pre className="whitespace-pre-wrap">{lyrics}</pre>
+                )}
             </div>
             
             <div className="bg-gray-900 p-6 rounded-lg shadow-lg w-full">
-            <h2 className="text-2xl font-semibold mb-4">Skibidified Lyrics:</h2>
-            {newLoading ? (
-                <p>Skibidifying...</p>    
-            ) : (
-                <pre className="whitespace-pre-wrap">{newLyrics}</pre>
-            )}
+                <h2 className="text-2xl font-semibold mb-4">Skibidified Lyrics:</h2>
+                {newLoading ? (
+                    <p>Skibidifying...</p>    
+                ) : (
+                    <pre className="whitespace-pre-wrap">{newLyrics}</pre>
+                )}
             </div>
         </div>
         
