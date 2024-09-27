@@ -558,8 +558,13 @@ export default function SongPage() {
             
         </div>
         
-        <button className='bg-blue-600 text-white font-bold px-6 py-3 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-300 shadow-lg w-1/2 mx-auto my-4'
-        onClick={() => skibidify(lyrics)}>SKIBIDIFY!</button>
+        {loading ? (
+            <p className='px-6 py-3 mx-auto my-4'>Wait for lyrics to load...</p>
+        ) : (
+            <button className='bg-blue-600 text-white font-bold px-6 py-3 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-300 shadow-lg w-1/2 mx-auto my-4'
+            onClick={() => skibidify(lyrics)}>SKIBIDIFY!</button>
+        )}
+        
     </div>
         {/* Lyrics */}
         <div className='flex flex-col md:flex-row gap-8 justify-center w-full'>
