@@ -110,8 +110,11 @@ export default function Home() {
   </div>
 
   {loading && <p className="mt-4 text-lg animate-pulse">Loading...</p>}
+
+    
+
 </div>
 
-
+    
   );
 }
